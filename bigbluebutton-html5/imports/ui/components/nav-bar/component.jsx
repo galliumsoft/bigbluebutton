@@ -92,7 +92,7 @@ class NavBar extends PureComponent {
       <div className={styles.navbar}>
         <div className={styles.top}>
           <div className={styles.left}>
-            <img src={'..\..\..\..\public\resources\images\logoimage.png'} height={90} />
+            <img src={'../../../../public/resources/images/logoimage.png'} height={90} />
             {!isExpanded ? null
               : <Icon iconName="left_arrow" className={styles.arrowLeft} />
             }
