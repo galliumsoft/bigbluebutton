@@ -335,7 +335,6 @@ class App extends Component {
             {this.renderMedia()}
             {this.renderActionsBar()}
           </div>
-          <h2>testing! testing! testing!</h2>
           {this.renderPanel()}
           {this.renderSidebar()}
         </section>

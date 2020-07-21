@@ -87,11 +87,12 @@ class NavBar extends PureComponent {
 
     let ariaLabel = intl.formatMessage(intlMessages.toggleUserListAria);
     ariaLabel += hasUnreadMessages ? (` ${intl.formatMessage(intlMessages.newMessages)}`) : '';
-
+    const baseName = Meteor.settings.public.app.cdn + Meteor.settings.public.app.basename;
     return (
       <div className={styles.navbar}>
         <div className={styles.top}>
           <div className={styles.left}>
+            <img src={`url('${baseName}/resources/images/logoimage.png')`} height={60} />
             {!isExpanded ? null
               : <Icon iconName="left_arrow" className={styles.arrowLeft} />
             }
