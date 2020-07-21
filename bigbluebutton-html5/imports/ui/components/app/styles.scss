@@ -183,7 +183,7 @@
 .sidebar {
   @extend %full-page;
   z-index: 4;
-
+  background-color: red;
   @include mq($medium-up) {
     flex: 0 15vw;
     order: 2;
